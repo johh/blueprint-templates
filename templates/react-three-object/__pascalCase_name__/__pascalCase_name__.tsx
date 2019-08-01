@@ -1,14 +1,10 @@
 import React, {
 	FunctionComponent,
+	useMemo,
+	useEffect,
 } from 'react';
 
 import {{pascalCase name}}Mesh from './{{pascalCase name}}Mesh';
-
-
-const {
-	useMemo,
-	useEffect,
-} = React;
 
 
 const {{pascalCase name}}: FunctionComponent = () => {
