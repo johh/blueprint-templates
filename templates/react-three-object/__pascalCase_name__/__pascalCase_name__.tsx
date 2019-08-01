@@ -1,4 +1,6 @@
-import * as React from 'react';
+import React, {
+	FunctionComponent,
+} from 'react';
 
 import {{pascalCase name}}Mesh from './{{pascalCase name}}Mesh';
 
@@ -9,7 +11,7 @@ const {
 } = React;
 
 
-export default function {{pascalCase name}}(): null {
+const {{pascalCase name}}: FunctionComponent = () => {
 	const mesh = useMemo( () => new {{pascalCase name}}Mesh(), []);
 
 	useEffect(
@@ -23,4 +25,6 @@ export default function {{pascalCase name}}(): null {
 	);
 
 	return null;
-}
+};
+
+export default {{pascalCase name}};
