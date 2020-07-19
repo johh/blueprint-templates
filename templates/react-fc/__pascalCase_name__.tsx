@@ -7,8 +7,14 @@ interface {{pascalCase name}}Props {
 
 }
 
-const {{pascalCase name}}: FunctionComponent<{{pascalCase name}}Props> = ( props ) => {
-	return null;
+const {{pascalCase name}}: FunctionComponent<{{pascalCase name}}Props> = ({
+	children,
+}) => {
+	return (
+		<>
+			{ children }
+		</>
+	);
 };
 
 export default {{pascalCase name}};
