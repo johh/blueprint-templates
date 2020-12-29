@@ -5,12 +5,13 @@ import { Material } from '@downpourdigital/boxes';
 import { Renderable } from '@downpourdigital/boxes-react-bridge';
 
 import geometry from './{{pascalCase name}}Geometry';
-import shader from './{{pascalCase name}}Material.glslx';
+import vertexShader from './{{pascalCase name}}Material.vert';
+import fragmentShader from './{{pascalCase name}}Material.frag';
 
 
 const material = new Material({
-	vertexShader: shader.vert,
-	fragmentShader: shader.frag,
+	vertexShader,
+	fragmentShader,
 });
 
 
